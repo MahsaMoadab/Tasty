@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943163834477",
+    "project_id": "tasty-6b41f",
+    "storage_bucket": "tasty-6b41f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943163834477:android:2149dfb9102c4e3f1c7f64",
+        "android_client_info": {
+          "package_name": "com.moadab.tasty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943163834477-6647f8ml5v4389ascguoslli425qeuhq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIDOoGKmfOiE9ktOuSGIqYCLvQxEEbOrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943163834477-6647f8ml5v4389ascguoslli425qeuhq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

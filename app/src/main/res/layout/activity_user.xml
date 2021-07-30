@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="40dp"
+    android:background="@color/white"
+    tools:context=".UserActivity">
+
+    <ImageView
+        android:id="@+id/back_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/arlrbbd"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:textSize="26dp" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="8dp"
+        android:background="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:background="@color/white"
+                android:id="@+id/ivAccount"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_account"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivChangePicture"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_camera"
+                app:layout_constraintBottom_toBottomOf="@+id/ivAccount"
+                app:layout_constraintEnd_toEndOf="@+id/ivAccount"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/ivAccount"
+                app:layout_constraintTop_toTopOf="@+id/ivAccount"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAccount">
+
+
+                <TextView
+                    android:id="@+id/c_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_profile"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:clickable="true"
+                    android:text="@string/your_name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/c_email"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/c_user"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_mail_pro"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="@string/email_address"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/c_bio"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/c_email"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_about_app"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/arlrbbd"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="@string/biography"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/back_tab_login"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/arlrbbd"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingBottom="20dp"
+                android:text="@string/sing_out"
+                android:textSize="18sp"
+                android:textColor="#818080"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+            <com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout
+                android:id="@+id/clView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLogout"
+                app:layout_constraintVertical_bias="1.0">
+
+            </com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
